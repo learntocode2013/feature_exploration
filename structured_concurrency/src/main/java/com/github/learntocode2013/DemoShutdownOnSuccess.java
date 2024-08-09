@@ -1,11 +1,9 @@
 package com.github.learntocode2013;
 
 import java.time.Duration;
-import java.time.Instant;
 import java.util.Optional;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
-import java.util.concurrent.TimeoutException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import jdk.incubator.concurrent.StructuredTaskScope;

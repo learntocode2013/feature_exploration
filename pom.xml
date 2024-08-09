@@ -12,6 +12,8 @@
   <modules>
     <module>virtual_threads</module>
     <module>structured_concurrency</module>
+    <module>sealed_class</module>
+    <module>continuations</module>
   </modules>
 
   <properties>
