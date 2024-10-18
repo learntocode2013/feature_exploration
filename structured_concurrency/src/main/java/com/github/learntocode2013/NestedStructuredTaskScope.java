@@ -138,8 +138,10 @@ public class NestedStructuredTaskScope {
     result.put("Stocks", (stocksWorth/netWorth)*100);
     result.put("Crypto", (cryptoWorth/netWorth)*100);
     result.put("Real Estate", (estateWorth/netWorth)*100);
-    throw new RuntimeException("Failed to calculate asset allocation");
-//    return result;
+    if (stocksWorth < 10) {
+      throw new RuntimeException("Failed to calculate asset allocation");
+    }
+    return result;
   }
 
   private String assessRiskProfile(
